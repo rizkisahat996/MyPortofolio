@@ -63,9 +63,9 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Liron &nbsp;
-            <span className="sm:block hidden"> | 3D Portfolio</span>
+          <p className="text-gray-600 text-[18px] font-bold cursor-pointer flex ">
+            Sahat &nbsp;
+            <span className="sm:block hidden"> | Students</span>
           </p>
         </Link>
 
@@ -74,8 +74,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.id ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.id ? "text-gray-600" : "text-secondary"
+              } hover:text-gray-600 text-[18px] font-medium cursor-pointer`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>

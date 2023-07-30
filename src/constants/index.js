@@ -25,6 +25,11 @@ import {
   threejs,
 } from "../assets";
 
+import laravel from "../assets/laravel.png";
+import student from "../assets/student.png";
+import port1 from "../assets/port1.png";
+import port2 from "../assets/port2.png";
+
 export const navLinks = [
   {
     id: "about",
@@ -46,17 +51,17 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "IT Student",
+    icon: student,
   },
+  {
+    title: "Laravel Developer",
+    icon: laravel
+  }
 ];
 
 const technologies = [
@@ -73,8 +78,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Laravel",
+    icon: laravel,
   },
   {
     name: "React JS",
@@ -198,16 +203,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Mughni",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows Owners to manage every bits of their business",
     tags: [
       {
-        name: "react",
+        name: "laravel",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "mysql",
         color: "green-text-gradient",
       },
       {
@@ -215,49 +220,28 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: port1,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "HKBP",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to search, browse and create all data of church servant",
     tags: [
       {
-        name: "react",
+        name: "codeigniter",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mysql",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
+    image: port2,
     source_code_link: "https://github.com/",
   },
 ];
