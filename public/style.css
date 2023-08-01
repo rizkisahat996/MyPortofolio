@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    opacity: 0.7;
+}
+
+::-webkit-scrollbar-track{
+    /* background-color: #8b0038; */
+}
+
+::-webkit-scrollbar-thumb{
+    /* border-radius: 10px; */
+    
+    background-color: #d9b766;
+}
+
+.p-ats{
+    padding: 65px 0px 30px;
+}
+
+.ke-atas{
+    transform: translateY(-2000px);
+    transition: 2.5s ease-in-out;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.judul{
+    font-family: 'Old Standard TT', serif;
+    color: #ce901d;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.none{
+    display: none;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-reverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+body{
+    height: 200vh;
+    width: 100%;
+}
+
+.landing-page{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    z-index: 100;
+    background: url(gambar/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+}
+
+.landing-page h1{
+    font-size: 40px;
+    color: #8b0038;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.landing-page h1 span{
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-style: italic;
+    font-weight: 200;
+    font-family: 'Old Standard TT', serif;
+}
+
+.landing-page button{
+    padding: 16px 32px;
+    background-color: #8b0038;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 5; 
+    /* background-color: #033500; */
+    background-color: #8b0038;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    opacity: 0.7;
+}
+
+.nav h1{
+    color: #d9b776;
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-family: 'Old Standard TT', serif;
+}
+
+.nav .nav-menu a{
+    font-size: 12px;
+    color: #d9b776;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#nav-btn{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+.nav .nav-menu .book{
+    padding: 6px 24px;
+    border: 2px solid #d9b776;
+}
+
+.nav .nav-menu .book:hover{
+    background-color: #d9b776;
+}
+
+.nav .nav-menu a:hover{
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.nav-respon{
+    width: 400px;
+    height: 100vh;
+    background-color: #8b0038;
+    justify-content: space-around;
+    z-index: 10;
+    position: fixed;
+    padding: 5%;
+    transform: translateX(-100%);
+    transition: 1s ease-in-out;
+}
+
+.nav-respon.active{
+    transform: translateX(0px);
+    transition: 1s ease-in-out;
+}
+
+#nav-close{
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+}
+
+.nav-respon a{
+    font-size: 12px;
+    color: #d9b776;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.nav-respon .book{
+    width: 90%;
+    border: 2px solid #d9b766;
+    padding: 8px 8px;
+    text-align: center;
+}
+
+.home{
+    min-height: 100vh;
+    max-height: 100vh;
+    background-image: url(gambar/backgroundhome.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    padding-left: 10%;
+    color: #fff;
+}
+
+.home h2{
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.home h1{
+    font-family: 'Old Standard TT', serif;
+    font-weight: 300;
+    font-size: 80px;
+}
+
+.home p{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn-music{
+    cursor: pointer;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    width: fit-content;
+    background-color: #d9b776;
+    padding: 6px 5px 2px;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.btn-music img{
+    width: 30px;
+    height: 30px;
+}
+
+.villa{
+    align-items: center;
+}
+
+
+.area-room,.area-terdekat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 4%;
+}
+
+.box-room{
+    width: 350px;
+    height: 220px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    margin: 15px;
+}
+
+.box-room .nama-room{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.765);
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-room .nama-room a{
+    font-size: 20px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 200;
+    color: #000;
+}
+
+.box-room .nama-room .plus-btn{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.box-room1{
+    background-image: url(gambar/room1.jpg);
+}
+
+.box-room2{
+    background-image: url(gambar/room2.jpg);
+}
+
+.box-room3{
+    background-image: url(gambar/room3.jpg);
+}
+
+.box-room4{
+    background-image: url(gambar/room4.jpg);
+}
+.box-room5{
+    background-image: url(gambar/room5.jpg);
+}
+.box-room6{
+    background-image: url(gambar/room6.jpg);
+}
+
+.area-aktivitas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.box-aktivitas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box-aktivitas img{
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: left;
+}
+
+.box-aktivitas .text-akti{
+    width: 50%;
+    padding: 0px 10%;
+}
+
+.box-aktivitas .text-akti h1{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.box-aktivitas .text-akti p{
+    font-size: 14px;
+}
+
+.terdekat .judul{
+    font-weight: 300;
+}
+
+.box-terdekat{
+    width: 250px;
+    min-width: 250px;
+    height: 400px;
+    background-color: #d9b766;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 15px;
+    transition: 1s ease-in-out;
+}
+
+.box-terdekat:hover{
+    background-color: #ba8811;
+    transition: 0.5s ease-in;
+}
+
+.box-terdekat img{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+}
+
+.box-terdekat p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.box-terdekat h1{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.box-terdekat a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #dcdcdc;
+    transition: 0.5 ease;
+    margin-top: auto;
+}
+
+.box-terdekat a:hover{
+    color: #fff;
+    transition: 0.5 ease;
+}
+
+.kontak{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.kontak-kiri{
+    width: 45%;
+    align-items: center;
+}
+
+.kontak-kiri .bagian-1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kontak-kiri .bagian-1 h1{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.kontak-kiri .bagian-1 p{
+    font-size: 15px;
+}
+
+.kontak-kiri hr{
+    display: block;
+    width: 90%;
+    height: 1px;
+    text-align: center;
+    background-color: #686868;
+    margin: 20px 0px;
+}
+
+.kontak-kiri .bagian-2, .kontak-kiri .bagian-3{
+    width: 90%;
+}
+
+.kontak-kiri .isi-email{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    margin: 5px 0px;
+}
+
+.kontak-kiri .bagian-2 .isi-email a{
+    color: #d9b766;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.kontak-kiri .bagian-2 .isi-email a:hover{
+    color: #8b0038;
+}
+
+.kontak-kiri .bagian-3 .isi-email a{
+    color: #686868;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.kontak-kanan{
+    width: 45%;
+}
+
+.kontak-kanan input{
+    background-color: #efefef;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.kontak-kanan .pesan{
+    height: 100px;
+}
+
+.kontak-kanan .kirim{
+    background-color: #d9b766;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 5%;
+    background-color: #8b0038;
+    color: #d9b766;
+}
+
+.footer hr{
+    width: 110%;
+    margin: 0px 0px 10px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footer .footer-1,.footer-2,.footer-3{
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.footer .footer-1 h1,.footer-2 h1, .footer-3 h1{
+    font-family: 'Old Standard TT', serif;
+    font-weight: 200;
+}
+
+.footer-1 .sosial{
+    display: flex;
+}
+
+.footer-1 .sosial img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px 0px 0px;
+}
+
+.footer-2 p,.footer-3 a{
+    font-size: 13px;
+    color: #d9b766;
+}
+
+.footer-3 a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width:768px){
+    #nav-btn{
+        display: block;
+    }
+
+    .nav .nav-menu{
+        display: none;
+    }
+
+    .btn-music{
+        left: 92%;
+    }
+
+    .box-aktivitas{
+        margin: 40px 0px;
+    }
+
+    .box-aktivitas img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .box-aktivitas .text-akti{
+        width: 90%;
+        margin: 30px 0px;
+    }
+
+    .kontak-kiri,.kontak-kanan{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .nav-respon{
+        width: 100%;
+    }
+
+    .btn-music{
+        left: 88%;
+    }
+
+    .home{
+        padding: 0px 10px;
+    }
+
+    .home h2{
+        font-size: 20px;
+    }
+
+    .home h1{
+        font-size: 50px;
+    }
+
+    .home p{
+        font-size: 13px;
+    }
+
+    .area-room{
+        padding: 0px;
+    }
+
+    .box-room{
+        width: 300px;
+        height: 180px;
+        margin: 15px 0px;
+    }
+
+    .kontak-kiri .bagian-1 h1{
+        font-size: 20px;
+    }
+
+    .kontak-kiri .bagian-1 p{
+        font-size: 13px;
+    }
+
+    .kontak-kiri .isi-email{
+        flex-direction: column;
+    }
+
+    .kontak-kiri .bagian-2 .isi-email a{
+        font-size: 13px;
+    }
+
+    .footer{
+        justify-content: flex-start;
+    }
+
+    .footer-1,.footer-2,.footer-3{
+        width: 100%;
+    }
+
+    .footer hr{
+        width: 50%;
+    }
+
+    .landing-page h1 span{
+        font-size: 50px;
+    }
+
+    .area-terdekat{
+        flex-wrap: nowrap;
+        overflow-x:scroll;
+        justify-content: flex-start;
+        scroll-snap-type: mandatory;
+    }
+
+    .area-terdekat::-webkit-scrollbar{
+        display: none;
+    }
+}
